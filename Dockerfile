@@ -11,6 +11,6 @@ RUN GOOS=linux go build -o hey .
 
 ########################
 ## Create runtime image
-FROM registry.access.redhat.com/ubi9/ubi-minimal:9.5-1736404155
+FROM registry.access.redhat.com/ubi9/ubi-minimal:9.6-1751286687
 
 COPY --from=build /build/hey /usr/bin/hey
